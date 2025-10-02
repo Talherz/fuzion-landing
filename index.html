@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuzion Fitness Brampton | Stronger Starts Here</title>
+  <meta name="description" content="Join Fuzion Fitness Brampton. Modern gym, flexible memberships, expert personal training. Book a free tour today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-red: #D61F2C;
+      --brand-red-dark: #9B0F19;
+      --brand-green: #00843D;
+      --brand-dark: #0B0F14;
+      --brand-light: #F5F7FA;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, sans-serif; }
+    .shadow-soft { box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, var(--brand-red), var(--brand-red-dark));
+      box-shadow: 0 6px 16px rgba(214,31,44,0.4);
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      background: #fff;
+      color: #111;
+      border: 1px solid #ddd;
+      transition: all 0.2s ease;
+    }
+    .btn-ghost:hover {
+      background: #f7f7f7;
+      transform: translateY(-1px);
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      background: #111;
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+    .btn-dark:hover {
+      background: #000;
+      transform: translateY(-1px);
+    }
+    .check::before { content: "✔"; margin-right: .5rem; color: var(--brand-green); }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="bg-black text-white">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="https://ffcanada.com/brampton/wp-content/uploads/sites/5/2019/01/cropped-fuzion-fitness-logo-1.png" alt="Fuzion Fitness" class="h-9 w-auto" />
+        <span class="text-sm sm:text-base font-semibold tracking-tight">Fuzion Fitness Brampton</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#memberships" class="hover:text-[color:var(--brand-green)]">Memberships</a>
+        <a href="#training" class="hover:text-[color:var(--brand-green)]">Personal Training</a>
+        <a href="#lead" class="hover:text-[color:var(--brand-green)]">Book a Tour</a>
+        <a href="#faq" class="hover:text-[color:var(--brand-green)]">FAQ</a>
+      </nav>
+      <a href="#lead" class="btn-primary">Start Free Trial</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden text-white" style="background: radial-gradient(1200px 500px at 15% -10%, rgba(214,31,44,.35), transparent), radial-gradient(1200px 500px at 85% 110%, rgba(155,15,25,.3), transparent), linear-gradient(180deg, #0b0f14 0%, #121926 100%);">
+    <div class="mx-auto max-w-6xl px-4 py-20 md:py-28">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">A modern gym for real results in Brampton</h1>
+        <p class="mt-4 text-lg text-gray-200">Flexible memberships, expert trainers, and clean, well maintained equipment. Book a free tour and see the difference.</p>
+        <div class="mt-8 flex gap-4 flex-wrap">
+          <a href="#lead" class="btn-primary">Book Free Tour</a>
+          <a href="#memberships" class="btn-ghost">View Memberships</a>
+        </div>
+        <p class="mt-6 text-sm text-gray-300">No pressure sales. Trial passes available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-extrabold">24/7</div>
+        <p class="text-sm text-gray-500">Access</p>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold">PT</div>
+        <p class="text-sm text-gray-500">Certified Trainers</p>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold">Clean</div>
+        <p class="text-sm text-gray-500">Well maintained</p>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold">Flexible</div>
+        <p class="text-sm text-gray-500">Memberships</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Memberships -->
+  <section id="memberships" class="bg-[color:var(--brand-light)]">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <div class="max-w-2xl mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Memberships made simple</h2>
+        <p class="mt-2 text-gray-700">We don’t list prices online. Visit or book a tour and we’ll tailor the best offer to your goals—no hidden fees.</p>
+        <div class="inline-block mt-3 text-sm px-3 py-1 rounded-full bg-red-50 text-[color:var(--brand-red)] border border-red-100">Transparent, in‑gym pricing</div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft border">
+          <h3 class="text-xl font-bold">Basic</h3>
+          <p class="text-sm text-gray-600 mt-1">Gym floor access</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="check">24/7 access</li>
+            <li class="check">Cardio & weights</li>
+            <li class="check">Locker rooms</li>
+          </ul>
+          <a href="#lead" class="btn-dark w-full mt-6">Get My Offer</a>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft border-2" style="border-color:rgba(214,31,44,.4)">
+          <div class="inline-block text-xs font-semibold px-2 py-1 rounded-full" style="background: rgba(214,31,44,.1); color: var(--brand-red);">Most popular</div>
+          <h3 class="text-xl font-bold">Plus</h3>
+          <p class="text-sm text-gray-600 mt-1">Classes + guest privileges</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="check">Everything in Basic</li>
+            <li class="check">Group classes</li>
+            <li class="check">Bring a friend passes</li>
+          </ul>
+          <a href="#lead" class="btn-primary w-full mt-6">Get My Offer</a>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-soft border">
+          <h3 class="text-xl font-bold">Premium</h3>
+          <p class="text-sm text-gray-600 mt-1">PT packs & recovery</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li class="check">Everything in Plus</li>
+            <li class="check">Discounted PT sessions</li>
+            <li class="check">Add recovery options</li>
+          </ul>
+          <a href="#lead" class="btn-dark w-full mt-6">Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Training -->
+  <section id="training" class="bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Personal training that fits your goals</h2>
+        <p class="mt-3 text-gray-700">Whether you are new or advanced, our certified trainers build a plan that fits your schedule and budget.</p>
+        <ul class="mt-6 space-y-3 text-gray-800">
+          <li class="flex gap-3"><span class="text-[color:var(--brand-green)]">▸</span><span>Free 30 minute consultation</span></li>
+          <li class="flex gap-3"><span class="text-[color:var(--brand-green)]">▸</span><span>Goal based programming and nutrition guidance</span></li>
+          <li class="flex gap-3"><span class="text-[color:var(--brand-green)]">▸</span><span>Simple monthly packages</span></li>
+        </ul>
+        <a href="#lead" class="btn-primary mt-6">Book a PT consult</a>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-soft border bg-gray-100">
+        <img src="https://images.unsplash.com/photo-1571907480495-4f1b13183488?q=80&w=1600&auto=format&fit=crop" alt="Personal training session" class="w-full h-80 md:h-[360px] object-cover" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop';">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead capture -->
+  <section id="lead" class="bg-gradient-to-b from-[color:var(--brand-light)] to-white">
+    <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">Book a free tour</h2>
+        <p class="mt-2 text-gray-700">Tell us a bit about you. A team member will reach out to confirm a time that works.</p>
+        <p class="mt-6 text-sm text-gray-600">Prefer to talk now? Call <a href="tel:+1905XXXXXXX" class="font-semibold text-[color:var(--brand-green)]">(905) XXX‑XXXX</a>.</p>
+        <ul class="mt-6 space-y-2 text-sm text-gray-700">
+          <li class="check">No long term contracts</li>
+          <li class="check">Student and family plans</li>
+          <li class="check">Corporate rates available</li>
+        </ul>
+      </div>
+      <form class="bg-white rounded-2xl p-6 shadow-soft border" action="https://formspree.io/f/your-id-here" method="POST">
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1" for="name">Full name</label>
+            <input type="text" id="name" name="name" required class="w-full rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-green)]">
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1" for="email">Email</label>
+              <input type="email" id="email" name="email" required class="w-full rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-green)]">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1" for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" class="w-full rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-green)]">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="interest">Area of interest</label>
+            <select id="interest" name="interest" class="w-full rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-green)]">
+              <option>General membership</option>
+              <option>Personal training</option>
+              <option>Classes</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="message">Anything else?</label>
+            <textarea id="message" name="message" rows="4" class="w-full rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-green)]"></textarea>
+          </div>
+          <input type="hidden" name="source" value="vercel-v0-demo">
+          <button type="submit" class="btn-primary w-full">Request my tour</button>
+          <p class="text-xs text-gray-500">By submitting you agree to be contacted by our team.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Frequently asked questions</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="p-5 border border-gray-200 rounded-xl">
+          <summary class="font-semibold cursor-pointer">Can I try the gym before joining?</summary>
+          <p class="mt-2 text-gray-700">Yes. Book a free tour or ask about a day pass at the front desk.</p>
+        </details>
+        <details class="p-5 border border-gray-200 rounded-xl">
+          <summary class="font-semibold cursor-pointer">Do you offer student pricing?</summary>
+          <p class="mt-2 text-gray-700">We offer student and family plans. Ask our team for current rates.</p>
+        </details>
+        <details class="p-5 border border-gray-200 rounded-xl">
+          <summary class="font-semibold cursor-pointer">What are the contract terms?</summary>
+          <p class="mt-2 text-gray-700">Month to month and annual options are available. No hidden fees.</p>
+        </details>
+        <details class="p-5 border border-gray-200 rounded-xl">
+          <summary class="font-semibold cursor-pointer">How do personal training packages work?</summary>
+          <p class="mt-2 text-gray-700">We build a plan around your goals. Packages include a free consultation and simple monthly billing.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white">
+    <div class="mx-auto max-w-6xl px-4 py-12 grid md:grid-cols-3 gap-8 items-start">
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <img src="https://ffcanada.com/brampton/wp-content/uploads/sites/5/2019/01/cropped-fuzion-fitness-logo-1.png" alt="Fuzion Fitness" class="h-9 w-auto" />
+          <span class="font-semibold">Fuzion Fitness Brampton</span>
+        </div>
+        <p class="text-sm text-gray-300">Stronger starts here. Clean facility, friendly staff, and flexible plans.</p>
+      </div>
+      <div>
+        <div class="font-semibold">Visit</div>
+        <p class="text-sm text-gray-300 mt-2">Brampton, Ontario • Canada</p>
+        <p class="text-sm text-gray-300">Open 24/7</p>
+      </div>
+      <div>
+        <div class="font-semibold">Contact</div>
+        <p class="text-sm text-gray-300 mt-2">Email: info@ffcanada.com</p>
+        <p class="text-sm text-gray-300">Phone: (905) XXX‑XXXX</p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-400 pb-8">© <span id="year"></span> Fuzion Fitness Brampton</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
